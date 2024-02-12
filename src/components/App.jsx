@@ -2,6 +2,7 @@ import Header from "../components/Header/Header"
 import Landingimage from "./Landingimage/LandingImage";
 import About from "./About/About";
 import Gallery from "./Gallery/Gallery";
+import Album from "./Album/Album";
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Landingimage />
       <About />
       <Gallery />
+      <Album />
     </div>
   );
 }

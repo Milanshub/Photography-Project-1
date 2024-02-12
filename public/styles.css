@@ -1,40 +1,87 @@
+
 * {
-    padding: 0px 20px 0px 20px;
+    /* padding: 0px 20px 0px 20px; */
     margin: 0;
     box-sizing: border-box;
   }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-  }
+.navbar-header{
+    background-color: rgba(0, 0, 0, 0); 
+}
+
 
 body{
-    padding: 0px 25px 0px 25px;
+    letter-spacing: .05em;
 }
+
+/* .img-fluid {
+    max-width: 100%;
+    height: auto;
+   
+} */
 
 div{
     margin: auto;
     text-align: center;
 }
 
-.inner-section{
-    padding: 50px 100px 50px 100px; 
+
+
+.albm-outer-section{
+    align-items: center;
+    justify-content: center;
 }
 
-h1, h2{
-    font-family: 'Forum', serif;
+.inner-section{
+    padding: 80px 0px 80px 0px; 
+    width: 1320px; 
+ 
 }
+
+.abt-outer-section{
+    background-color: #F7F7F9;
+}
+
+
+
+.p-2{
+    width: 500px;
+    text-align: center;
+}
+
+.abt-header{
+    font-family: 'Forum', serif;
+    font-size: 29px;
+    color: #2d2d2d;
+
+}
+
+.abt-name{
+    font-family: 'Forum', serif;
+    font-size: 40px;
+    color: #2d2d2d;
+
+}
+
 
 p {
     font-family: 'Ubuntu', serif;
+    font-size: 14px;
+    text-align: center;
 }
 
 .col-1{
     padding: 50px 100px 50px 100px; 
 }
 
+.vertical-photo{
+    height: 515px;
+    width: 643px; 
+    padding: 20px 20px 20px 20px; 
+}
 
-
+.horizontal-photo{
+    height: 765px ;
+    width: 1250px ;
+    padding: 20px 20px 20px 20px; 
+}
