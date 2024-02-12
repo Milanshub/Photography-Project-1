@@ -38,7 +38,7 @@ function Album(){
          <Col><Image className='vertical-photo' src={Angelica9}data-sizes="auto" fluid /></Col>
         </Row>
         <Row>
-         <Col><Image className='vertical-photo'  src={Angelica10}data-sizes="auto" fluid /></Col>
+         <Col><Image className='vertical-photo-chng'  src={Angelica10}data-sizes="auto" fluid /></Col>
          <Col><Image className='vertical-photo' src={Angelica11}data-sizes="auto" fluid /></Col>
         </Row>
       </Container>

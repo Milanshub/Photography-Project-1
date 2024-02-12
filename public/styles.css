@@ -66,12 +66,19 @@ div{
 
 p {
     font-family: 'Ubuntu', serif;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
+    letter-spacing: .05em;
 }
 
-.col-1{
-    padding: 50px 100px 50px 100px; 
+.gallery-row{
+    padding: 70px 70px;
+}
+
+.col-1{ 
+    font-size: 34px;
+    font-family: 'Forum', serif;
+    color: #2d2d2d;
 }
 
 .vertical-photo{
@@ -82,6 +89,23 @@ p {
 
 .horizontal-photo{
     height: 765px ;
-    width: 1250px ;
+    width: 1400px ;
     padding: 20px 20px 20px 20px; 
 }
+
+button.btn{
+    position: relative;
+    display: inline-block;
+    font-size: 26px;
+    background-color: #2d2d2d;
+    color: #F7F7F9;
+    font-family: 'Forum', serif;
+    padding: 20px 70px 20px 70px;
+    margin: 30px 40px;
+    letter-spacing: 0.5px;
+}
+
+button.btn:hover {
+    background-color: #B4B4B8; /* change to your desired color */
+    color: #2d2d2d; 
+  }
