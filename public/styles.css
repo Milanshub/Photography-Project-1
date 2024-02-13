@@ -79,6 +79,8 @@ p {
     font-size: 34px;
     font-family: 'Forum', serif;
     color: #2d2d2d;
+    align-items: center;
+   
 }
 
 .vertical-photo{
@@ -109,3 +111,42 @@ button.btn:hover {
     background-color: #B4B4B8; /* change to your desired color */
     color: #2d2d2d; 
   }
+
+  button.gallery-btn{
+    font-size: 22px;
+    color: 2d2d2d; 
+    font-family: 'Ubuntu', serif;
+    background-color: transparent;
+    outline: invert;
+    border: none;
+    padding: none;
+    font-weight: lighter;
+    text-decoration: underline;
+
+
+
+  }
+
+  .gallery-container{
+    display: grid;
+  }
+
+ 
+h2.gallery-h2.portrait{
+    text-indent: -13px;
+    font-weight: lighter;
+
+}
+
+h2.gallery-h2.campaign{
+    text-indent: -25px;
+    font-weight: lighter;
+
+}
+
+h2.gallery-h2.retouching{
+    text-indent: -29px;    
+    font-weight: lighter;
+
+}
+
