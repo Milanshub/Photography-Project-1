@@ -6,13 +6,61 @@
   }
 
 .navbar-header{
-    background-color: rgba(0, 0, 0, 0); 
+    background-color: rgba(59, 58, 58, 0); 
 }
 
+h3{
+    margin-left: 70px;
+}
 
 body{
     letter-spacing: .05em;
 }
+.nav-bar{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    color: white;
+    font-family: 'Forum', serif;
+
+
+}
+/*
+.nav-bar div{
+    width: 20%;
+} */
+.nav-bar .main-menu{
+    position:relative;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.main-menu li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.drop-down{
+  
+    position: absolute;
+    top: 90%;
+    left: 8%;
+   /* background-color: rgb(221, 214, 214); */
+}
+.drop-down li{
+    display: block;
+   color: white;
+   margin-top: 10px;
+}
+.drop-down a{
+    color: white;
+    text-decoration: none;
+}
+
+
 
 /* .img-fluid {
     max-width: 100%;
@@ -21,7 +69,7 @@ body{
 } */
 
 div{
-    margin: auto;
+    margin: auto; 
     text-align: center;
 }
 

@@ -1,12 +1,45 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
+
+import { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 
 function Header(){
+
+   const [show, setShow]= useState(false);
+
+
     return (
-    <Navbar expand="lg" className="navbar-header">
+    <>
+    <div className="nav-bar">
+      <h3>
+        Likakambur Gallery
+      </h3>
+      <ul className="main-menu">
+         <li>Main</li>
+         
+         <li>
+         <div onClick={()=> setShow(!show)}>Gallery</div>
+         {show && (
+          <ul className="drop-down" onClick={()=> setShow(false)}>
+            <li><Link to="/portrait"> Portrait </Link></li>
+            <li>Commercial</li>
+            <li>Retouching</li>
+           </ul>
+         )
+         }
+          </li> 
+      
+         <li>Services</li>
+         <li>Testimonials</li>
+         <li>Contacts</li>
+      </ul>
+    </div>
+    {/* <Navbar expand="lg" className="navbar-header">
           <Container className='navbar-header-inner'>
             <Navbar.Brand href="#home">Likakambur Gallery</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -14,10 +47,8 @@ function Header(){
               <Nav className="me-auto">
                 <Nav.Link href="#main">Main</Nav.Link>
                 <NavDropdown title="Gallery" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">Services</NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Portrait
-                  </NavDropdown.Item>
+                  <Nav.Link href="">Services</Nav.Link>
+                  <Nav.Link href="/portrait" activeStyle> Portrait </Nav.Link>
                   <NavDropdown.Item href="#action/3.3">Commercial</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="#action/3.4">
@@ -30,7 +61,11 @@ function Header(){
               </Nav>
             </Navbar.Collapse>
           </Container>
-        </Navbar>
+        </Navbar> */}
+
+
+        {/* <Outlet /> */}
+        </>
      
   
       );
