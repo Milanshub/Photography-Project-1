@@ -4,17 +4,18 @@ import ButtonExample from "../components/Album/Button";
 import Gallery from "../components/Gallery/Gallery";
 import Landingimage from "../components/Landingimage/LandingImage";
 
-
 function Home(){
 
 
     return(
         <div>
+           
             <Landingimage />
             <About />
             <Gallery />
             <Album />
             <ButtonExample />
+        
         </div>
     )
 }

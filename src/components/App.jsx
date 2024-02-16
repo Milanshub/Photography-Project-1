@@ -1,13 +1,10 @@
-import Header from "../components/Header/Header"
-// import Landingimage from "./Landingimage/LandingImage";
-// import About from "./About/About";
-// import Gallery from "./Gallery/Gallery";
-// import Album from "./Album/Album";
-// import ButtonExample from "./Album/Button";
+import Header from "./Header/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Portrait from "../pages/portrait";
+import Portrait from "../pages/Portrait/portrait";
 import Home from "../pages/Home";
-
+import Commercial from "../pages/Commercial/Commercial";
+import Retouching from "../pages/Retouching/Retouching";
+import Services from "../pages/Services/Services";
 
 
 function App() {
@@ -16,17 +13,14 @@ function App() {
 
     <Router>
       <Header />
-      {/* <Landingimage />
-      <About />
-      <Gallery />
-      <Album />
-      <ButtonExample /> */}
-
-    
+   
       <Routes>
+        <Route path="/commercial" element={<Commercial />} />
         <Route path="/portrait" element={<Portrait />} />
         <Route path="/" element={<Home />} />
-
+        <Route path="/retouching" element={<Retouching />} /> 
+        <Route path="/services" element={<Services />} />
+  
       </Routes>
       </Router>
     </div>

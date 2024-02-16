@@ -5,68 +5,41 @@
     box-sizing: border-box;
   }
 
-.navbar-header{
-    background-color: rgba(59, 58, 58, 0); 
+h1{
+    font-family: 'Forum', serif;
+
+} 
+
+h2{
+    font-family: 'Forum', serif;
+    text-align: left;
+    margin-bottom: 40px;
+
+}
+
+li{
+    font-family: 'Ubuntu', serif;
+    text-align: left;
+}
+
+.services-p{
+    text-align: left;
+    margin-top: 90px;
+}
+
+.services-row{
+    margin: 20px 20px 20px 20px; 
 }
 
 h3{
     margin-left: 70px;
 }
 
+
 body{
     letter-spacing: .05em;
 }
-.nav-bar{
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    height: 50px;
-    position: fixed;
-    width: 100%;
-    color: white;
-    font-family: 'Forum', serif;
 
-
-}
-/*
-.nav-bar div{
-    width: 20%;
-} */
-.nav-bar .main-menu{
-    position:relative;
-    list-style: none;
-    margin-bottom: 0;
-}
-
-.main-menu li{
-    display: inline-block;
-    margin-left: 20px;
-}
-.drop-down{
-  
-    position: absolute;
-    top: 90%;
-    left: 8%;
-   /* background-color: rgb(221, 214, 214); */
-}
-.drop-down li{
-    display: block;
-   color: white;
-   margin-top: 10px;
-}
-.drop-down a{
-    color: white;
-    text-decoration: none;
-}
-
-
-
-/* .img-fluid {
-    max-width: 100%;
-    height: auto;
-   
-} */
 
 div{
     margin: auto; 
@@ -160,7 +133,7 @@ button.btn:hover {
     color: #2d2d2d; 
   }
 
-  button.gallery-btn{
+button.gallery-btn{
     font-size: 22px;
     color: 2d2d2d; 
     font-family: 'Ubuntu', serif;
@@ -175,7 +148,7 @@ button.btn:hover {
 
   }
 
-  .gallery-container{
+.gallery-container{
     display: grid;
   }
 
@@ -195,6 +168,21 @@ h2.gallery-h2.campaign{
 h2.gallery-h2.retouching{
     text-indent: -29px;    
     font-weight: lighter;
+
+}
+
+div.portrait-div{
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.portrait-img{
+    padding: 20px 10px 20px 10px;
+}
+
+.retouching-img{
+    padding: 20px 10px 20px 10px;
 
 }
 
