@@ -24,8 +24,8 @@ function Header(){
                   <Nav.Link href="/retouching" activeStyle> Retouching</Nav.Link>
                 </NavDropdown>
                 <Nav.Link href="/services">SERVICES</Nav.Link>
-                <Nav.Link href="#testimonials">TESTIMONIALS</Nav.Link>
-                <Nav.Link href="#contacts">CONTACTS</Nav.Link>
+                <Nav.Link href="/testimonials">TESTIMONIALS</Nav.Link>
+                <Nav.Link href="/contacts">CONTACTS</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

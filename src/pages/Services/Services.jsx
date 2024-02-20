@@ -66,7 +66,7 @@ function Services(){
                 </Row>
                 <Row className="services-row">
                     <Col>
-                        <h2>Retouching</h2>
+                        <h2 className="services-retouching">Retouching</h2>
                     </Col>
                     <Col><Image className="services-img" src={services4} data-sizes="auto" fluid /></Col>
                 </Row>
