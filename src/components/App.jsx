@@ -14,6 +14,8 @@ import Anya from "../pages/Anya/Anya";
 import Julia from "../pages/Julia/Julia";
 import Sofia from "../pages/Sofia/Sofia";
 import Yana from "../pages/Yana/Yana";
+import Boho from "../pages/Commercial/Boho/Boho";
+import AmericanDream from "../pages/Commercial/Anna-rosen/Americandream";
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
         <Route path="/julia" element={<Julia />} />
         <Route path="/sofia" element={<Sofia />} />
         <Route path="/yana" element={<Yana />} />
+        <Route path="/boho" element={<Boho />} />
+        <Route path="/anna-rosen" element={<AmericanDream />} />
 
       </Routes>
      </Router>

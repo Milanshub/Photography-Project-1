@@ -28,6 +28,17 @@ h1{
     font-size: 20px;
 }
 
+.portrait-link{
+    position: relative;
+    bottom: 450px;
+    color: #F7F7F9;
+    text-decoration: none;
+}
+
+.portrait-link:hover{
+    text-decoration: underline;
+}
+
 .contacts-img{
     height: 320px;
     width: 320px;
@@ -269,3 +280,20 @@ div.portrait-div{
 
 }
 
+.anthe-img{
+    padding: 20px 10px 20px 10px;
+
+}
+
+.nicole-img{
+    padding: 20px 10px 20px 10px;
+
+}
+
+.nicole-img-5{
+    height: 424px;
+}
+
+.anya-img{
+    padding: 20px 10px 20px 10px;
+}

@@ -20,37 +20,37 @@ function Portrait() {
                 <Row className="portrait-row">
                     <Col>
                         <Image className="portrait-img" src={Anthe1} data-sizes="auto" fluid />
-                        <Link to="/anthe">Anthe</Link>
+                        <Link to="/anthe" className="portrait-link" >Anthe</Link>
                     </Col>
                     <Col>
                         <Image className="portrait-img" src={Nicole1} data-sizes="auto" fluid /> 
-                        <Link to="/nicole">Nicole</Link>
+                        <Link to="/nicole" className="portrait-link" >Nicole</Link>
                     </Col>
                 </Row>
                 <Row className="portrait-row">
                     <Col>
                         <Image className="portrait-img" src={Anya} data-sizes="auto" fluid />
-                        <Link to="/anya">Anya</Link>
+                        <Link to="/anya" className="portrait-link" >Anya</Link>
                     </Col>
                     <Col>
                         <Image className="portrait-img" src={Anna1} data-sizes="auto" fluid /> 
-                        <Link to="/anna">Anna</Link>
+                        <Link to="/anna" className="portrait-link" >Anna</Link>
                     </Col>
                 </Row>
                 <Row className="portrait-row">
                     <Col>
                         <Image className="portrait-img" src={Sofia1} data-sizes="auto" fluid /> 
-                        <Link to="/sofia">Sofia</Link>
+                        <Link to="/sofia" className="portrait-link" >Sofia</Link>
                     </Col>
                     <Col>
                         <Image className="portrait-img" src={Julia1} data-sizes="auto" fluid />
-                        <Link to="/julia">Julia</Link>
+                        <Link to="/julia" className="portrait-link" >Julia</Link>
                      </Col>
                 </Row>
                 <Row className="portrait-row">
                     <Col>
                         <Image className="portrait-img" src={Yana1} data-sizes="auto" fluid />
-                        <Link to="/yana">Yana</Link>
+                        <Link to="/yana" className="portrait-link" >Yana</Link>
                      </Col>
                 </Row>
             </Container>
