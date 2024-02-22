@@ -6,7 +6,7 @@ function About(){
         <Stack gap={3} className='abt-outer-section'>
         <div className='inner-section'>
           <div className="p-2 abt-header"><h1>Photographer</h1></div>
-          <div className="p-2 abt-name"><h2>Angelika Kambur</h2></div>
+          <div className="p-2 abt-name"><h2 className='about-h2'>Angelika Kambur</h2></div>
           <div className="p-2">
           <p>
           Hi everyone! My name is Angelika and Im a photographer. 

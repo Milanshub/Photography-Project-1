@@ -2,20 +2,44 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import whatssapp from "./whatsapp-24.png"
+import instagram from './2515843_black and white_dark grey_instagram_icon.png'
+import { useState, useEffect } from 'react';
 
 // import { Link } from "react-router-dom";
 
 
 
 function Header(){
+  const[Sticky, setSticky] = useState(false);
+
+  function handleScroll(){
+    setSticky(window.scrollY>0);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return(
-  <>
-  <div>
-   <Navbar expand="lg" className="navbar-header">
-          <Container className='navbar-header-inner'>
-            <Navbar.Brand href="/">Likakambur Gallery</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+   <Navbar    className={`navbar ${Sticky ? 'sticky' : ''}`}
+   expand="lg"
+   sticky="top"
+   style={{ backgroundColor: Sticky ? 'white' : 'white' }}>
+   
+          <Container className='h-100'>
+            <Navbar.Brand  className='nav-h' href="https://www.instagram.com/likakambur">
+              <img src={instagram} className='icon' alt='whatsapp-icon' />
+            </Navbar.Brand>
+            <Navbar.Brand className='nav-h'  href="https://wa.me/34607313733">
+              <img src={whatssapp} className='icon' alt='whatsapp-icon' />
+            </Navbar.Brand>
+            <Navbar.Toggle className='nav-h'  aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse className='nav-h'  id="basic-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link href="/">MAIN</Nav.Link>
                 <NavDropdown title="GALLERY" id="basic-nav-dropdown">
@@ -30,8 +54,8 @@ function Header(){
             </Navbar.Collapse>
           </Container>
         </Navbar>
-</div>
-</>)
+
+)
 }
 
 export default Header; 

@@ -4,10 +4,9 @@ import  Container  from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ContactsImg from "./contacts.jpeg";
+import { Link } from "react-router-dom";
 
-function handleClick(){
-    alert("whatsapp!")
-}
+
 
 function Contacts(){
     return(
@@ -23,10 +22,22 @@ function Contacts(){
                 </Col>
             </Row>
             <Row>
-                <Col className="contacts-col"><button className="btn-contacts" onClick={handleClick} >WHATSAPP</button></Col>
+                <Col className="contacts-col">
+                    <button className="btn-contacts" > 
+                        <Link className="link-contacts" to="https://wa.me/34607313733" >
+                            WHATSAPP
+                        </Link>
+                    </button>
+                </Col>
             </Row>
             <Row>
-                <Col className="contacts-col"><button className="btn-contacts" onClick={handleClick} >TELEGRAM</button></Col>
+                <Col className="contacts-col">
+                    <button className="btn-contacts" >
+                     <Link className="link-contacts" to="https://t.me/LikaLaz">
+                        TELEGRAM 
+                     </Link> 
+                    </button>
+                </Col>
             </Row>
         </Container>
     )
