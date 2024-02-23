@@ -4,9 +4,22 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import TestimonialIcon from "./speech-bubble-icon.png";
+import PopupForm from "./PopupForm";
+import { useState } from "react";   
 
 
 function Testimonials(){
+
+    const [isPopupOpen, setPopupOpen] = useState(false);
+
+    const openPopup = () => {
+        setPopupOpen(true);
+    };
+
+    const closePopup = () => {
+        setPopupOpen(false);
+    };
+
     return(
     <Container className="testimonials-container">
           <Row>
@@ -17,7 +30,12 @@ function Testimonials(){
         </Row>
         <Row>
             <Col>
-                <button className="btn-testimonials">LEAVE FEEDBACK</button>
+                <button className="btn-testimonials"
+                onClick={openPopup}>
+                    LEAVE FEEDBACK
+                </button>
+
+                <PopupForm isOpen={isPopupOpen} onClose={closePopup} />
             </Col>
         </Row>
     
